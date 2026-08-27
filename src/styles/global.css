@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  color-scheme: light;
+  --color-paper: #faf7f2;
+  --color-ink: #23201b;
+  --color-line: #e3ddd1;
+  --color-taupe: #8c7d68;
+}
+
+.dark {
+  color-scheme: dark;
+  --color-paper: #171511;
+  --color-ink: #f1ece3;
+  --color-line: #332e26;
+  --color-taupe: #a8987e;
+}
+
+@theme inline {
+  --color-paper: var(--color-paper);
+  --color-ink: var(--color-ink);
+  --color-line: var(--color-line);
+  --color-taupe: var(--color-taupe);
+}
+
+html.lang-pending body {
+  visibility: hidden;
+}
+
+.lang-loader {
+  display: none;
+}
+
+html.lang-pending .lang-loader {
+  visibility: visible;
+  display: flex;
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-paper);
+}
+
+.lang-loader-spinner {
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 9999px;
+  border: 2px solid var(--color-line);
+  border-top-color: var(--color-ink);
+  animation: lang-loader-spin 0.7s linear infinite;
+}
+
+@keyframes lang-loader-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

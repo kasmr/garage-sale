@@ -1,0 +1,22 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import ItemDetail from "../../components/ItemDetail";
+import { items } from "../../data/items";
+import { defaultLang } from "../../i18n";
+
+export function getStaticPaths() {
+	return items.map((item) => ({
+		params: { slug: item.slug },
+		props: { item },
+	}));
+}
+
+const { item } = Astro.props;
+---
+
+<Layout
+	title={`${item.title[defaultLang]} — ${item.price}`}
+	description={item.description[defaultLang]}
+>
+	<ItemDetail item={item} client:load />
+</Layout>

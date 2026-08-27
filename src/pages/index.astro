@@ -1,0 +1,12 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Home from "../components/Home";
+import { sale } from "../data/sale";
+import { useTranslations, defaultLang } from "../i18n";
+
+const t = useTranslations(defaultLang);
+---
+
+<Layout title={t.siteTitle} description={`${t.browseHeading} — ${sale.address[defaultLang]}`}>
+	<Home client:load />
+</Layout>

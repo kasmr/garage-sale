@@ -1,0 +1,16 @@
+{
+  "siteTitle": "Garage Sale",
+  "saleAddressLabel": "Location",
+  "saleDatesLabel": "Dates & hours",
+  "googleMapsLink": "Google Maps",
+  "appleMapsLink": "Apple Maps",
+  "browseHeading": "Items for sale",
+  "viewList": "List view",
+  "viewGrid": "Grid view",
+  "priceLabel": "Price",
+  "viewItem": "View details",
+  "backToItems": "Back to all items",
+  "contactHeading": "Interested? Get in touch",
+  "telegramLink": "Telegram",
+  "whatsappLink": "WhatsApp"
+}

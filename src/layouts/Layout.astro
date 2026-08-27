@@ -1,0 +1,59 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<html lang="ru">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="description" content={description} />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<script is:inline>
+			(function () {
+				var stored = localStorage.getItem("theme");
+				var theme =
+					stored === "dark" || stored === "light"
+						? stored
+						: window.matchMedia("(prefers-color-scheme: dark)").matches
+							? "dark"
+							: "light";
+				document.documentElement.classList.toggle("dark", theme === "dark");
+
+				// The page is always server-rendered in Russian. If a non-default
+				// language is stored, hide the page until hydration swaps the text
+				// in, rather than flashing Russian first. Home's useLang effect
+				// removes this class as soon as it resolves; the timeout is a
+				// safety net in case hydration never runs.
+				if (localStorage.getItem("lang") === "en") {
+					document.documentElement.classList.add("lang-pending");
+					setTimeout(function () {
+						document.documentElement.classList.remove("lang-pending");
+					}, 2000);
+				}
+			})();
+		</script>
+		<noscript>
+			<style>
+				html.lang-pending body {
+					visibility: visible !important;
+				}
+			</style>
+		</noscript>
+	</head>
+	<body class="bg-paper text-ink">
+		<div class="lang-loader" aria-hidden="true">
+			<span class="lang-loader-spinner"></span>
+		</div>
+		<slot />
+	</body>
+</html>
