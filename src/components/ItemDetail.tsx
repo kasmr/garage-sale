@@ -5,6 +5,7 @@ import { sale } from "../data/sale";
 import { useTranslations } from "../i18n";
 import { useLang } from "../i18n/useLang";
 import { useTheme } from "../hooks/useTheme";
+import { baseUrl } from "../utils/baseUrl";
 
 export default function ItemDetail({ item }: { item: Item }) {
   const [lang, setLang] = useLang();
@@ -23,7 +24,7 @@ export default function ItemDetail({ item }: { item: Item }) {
 
       <main className="mx-auto max-w-3xl px-6 py-16">
         <a
-          href="/"
+          href={baseUrl}
           className="mb-10 inline-block text-xs tracking-widest text-taupe uppercase hover:text-ink"
         >
           &larr; {t.backToItems}
@@ -38,12 +39,18 @@ export default function ItemDetail({ item }: { item: Item }) {
         <p className="mt-8 flex items-baseline gap-3">
           <span className="text-4xl font-semibold">{item.price}</span>
           {item.originalPrice && (
-            <span className="text-xl text-taupe line-through">{item.originalPrice}</span>
+            <span className="text-xl text-taupe line-through">
+              {item.originalPrice}
+            </span>
           )}
-          {item.priceNote && <span className="text-taupe">{item.priceNote}</span>}
+          {item.priceNote && (
+            <span className="text-taupe">{item.priceNote}</span>
+          )}
         </p>
 
-        <p className="mt-4 max-w-2xl leading-relaxed text-ink/70">{item.description[lang]}</p>
+        <p className="mt-4 max-w-2xl leading-relaxed text-ink/70">
+          {item.description[lang]}
+        </p>
 
         {item.links.length > 0 && (
           <div className="mt-4 flex flex-wrap gap-x-6 gap-y-2">
@@ -61,8 +68,13 @@ export default function ItemDetail({ item }: { item: Item }) {
           </div>
         )}
 
-        <section id="contact" className="mt-16 border-t border-line pt-12 text-center">
-          <h2 className="text-xs tracking-widest text-taupe uppercase">{t.contactHeading}</h2>
+        <section
+          id="contact"
+          className="mt-16 border-t border-line pt-12 text-center"
+        >
+          <h2 className="text-xs tracking-widest text-taupe uppercase">
+            {t.contactHeading}
+          </h2>
           <p className="mt-3 text-lg">{sale.contact.name[lang]}</p>
           <div className="mt-6 flex items-center justify-center gap-6">
             <a

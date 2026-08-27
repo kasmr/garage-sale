@@ -10,7 +10,8 @@ export const sale = {
     ru: "Будапешт, VII район, около Октогона",
   },
   maps: {
-    google: "https://www.google.com/maps/search/?api=1&query=Octogon%2C+Budapest",
+    google:
+      "https://www.google.com/maps/search/?api=1&query=Octogon%2C+Budapest",
     apple:
       "https://maps.apple.com/place?address=Oktogon%2C+1066+Budapest%2C+District+VI%2C+Andr%C3%A1ssy+%C3%BAt%2C+Hungary&coordinate=47.505288%2C19.063445&name=Oktogon",
   },

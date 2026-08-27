@@ -1,3 +1,4 @@
+import { baseUrl } from "../utils/baseUrl";
 
 export type Item = {
   slug: string;
@@ -34,8 +35,14 @@ export const items: Item[] = [
       },
     ],
     photos: [
-      { src: "/images/monitor-1.jpg", alt: "LG UltraWide Monitor 29WP500-B" },
-      { src: "/images/monitor-2.jpg", alt: "LG UltraWide Monitor 29WP500-B" },
+      {
+        src: `${baseUrl}images/monitor-1.jpg`,
+        alt: "LG UltraWide Monitor 29WP500-B",
+      },
+      {
+        src: `${baseUrl}images/monitor-2.jpg`,
+        alt: "LG UltraWide Monitor 29WP500-B",
+      },
     ],
   },
   {
@@ -57,9 +64,9 @@ export const items: Item[] = [
       },
     ],
     photos: [
-      { src: "/images/soundbar-1.jpg", alt: "LG Soundbar S60T" },
-      { src: "/images/soundbar-2.jpg", alt: "LG Soundbar S60T" },
-      { src: "/images/soundbar-3.jpg", alt: "LG Soundbar S60T" },
+      { src: `${baseUrl}images/soundbar-1.jpg`, alt: "LG Soundbar S60T" },
+      { src: `${baseUrl}images/soundbar-2.jpg`, alt: "LG Soundbar S60T" },
+      { src: `${baseUrl}images/soundbar-3.jpg`, alt: "LG Soundbar S60T" },
     ],
   },
   {
@@ -81,9 +88,18 @@ export const items: Item[] = [
       },
     ],
     photos: [
-      { src: "/images/air-purifier-1.jpg", alt: "Pro Breeze 5L Portable Air Cooler" },
-      { src: "/images/air-purifier-2.jpg", alt: "Pro Breeze 5L Portable Air Cooler" },
-      { src: "/images/air-purifier-3.jpg", alt: "Pro Breeze 5L Portable Air Cooler" },
+      {
+        src: `${baseUrl}images/air-purifier-1.jpg`,
+        alt: "Pro Breeze 5L Portable Air Cooler",
+      },
+      {
+        src: `${baseUrl}images/air-purifier-2.jpg`,
+        alt: "Pro Breeze 5L Portable Air Cooler",
+      },
+      {
+        src: `${baseUrl}images/air-purifier-3.jpg`,
+        alt: "Pro Breeze 5L Portable Air Cooler",
+      },
     ],
   },
   {
@@ -103,7 +119,12 @@ export const items: Item[] = [
         url: "https://www.ikea.com/hu/hu/p/renberget-forgoszek-bomstad-fekete-60493546/",
       },
     ],
-    photos: [{ src: "/images/chair-1.jpg", alt: "IKEA Renberget Office Chair" }],
+    photos: [
+      {
+        src: `${baseUrl}images/chair-1.jpg`,
+        alt: "IKEA Renberget Office Chair",
+      },
+    ],
   },
   {
     slug: "computer-table",
@@ -123,8 +144,8 @@ export const items: Item[] = [
       },
     ],
     photos: [
-      { src: "/images/table-1.jpg", alt: "IKEA Alex Desk" },
-      { src: "/images/table-2.jpg", alt: "IKEA Alex Desk" },
+      { src: `${baseUrl}images/table-1.jpg`, alt: "IKEA Alex Desk" },
+      { src: `${baseUrl}images/table-2.jpg`, alt: "IKEA Alex Desk" },
     ],
   },
   {
@@ -145,8 +166,14 @@ export const items: Item[] = [
       },
     ],
     photos: [
-      { src: "/images/vaacum-cleaner-1.jpg", alt: "Xiaomi Robot Vacuum S10" },
-      { src: "/images/vaacum-cleaner-2.jpg", alt: "Xiaomi Robot Vacuum S10" },
+      {
+        src: `${baseUrl}images/vaacum-cleaner-1.jpg`,
+        alt: "Xiaomi Robot Vacuum S10",
+      },
+      {
+        src: `${baseUrl}images/vaacum-cleaner-2.jpg`,
+        alt: "Xiaomi Robot Vacuum S10",
+      },
     ],
   },
   {
@@ -166,7 +193,12 @@ export const items: Item[] = [
         url: "https://www.decathlon.hu/p/pingponguto-szett-2-db-uto-labdak-iskolai-hasznalatra-ttr-100-3-ittf/_/R-p-353270?mc=8872802",
       },
     ],
-    photos: [{ src: "/images/tennis-rackets-1.jpg", alt: "Table tennis racket set" }],
+    photos: [
+      {
+        src: `${baseUrl}images/tennis-rackets-1.jpg`,
+        alt: "Table tennis racket set",
+      },
+    ],
   },
   {
     slug: "mattress",
@@ -186,8 +218,8 @@ export const items: Item[] = [
       },
     ],
     photos: [
-      { src: "/images/matress-1.jpg", alt: "Camping air mattress" },
-      { src: "/images/matress-2.jpg", alt: "Camping air mattress" },
+      { src: `${baseUrl}images/matress-1.jpg`, alt: "Camping air mattress" },
+      { src: `${baseUrl}images/matress-2.jpg`, alt: "Camping air mattress" },
     ],
   },
   {
@@ -207,7 +239,12 @@ export const items: Item[] = [
         url: "https://www.tefal.hu/vizforralo-tefal-sense-ko693110-feher-1-5-l",
       },
     ],
-    photos: [{ src: "/images/kettle-1.jpg", alt: "Tefal Sense electric kettle" }],
+    photos: [
+      {
+        src: `${baseUrl}images/kettle-1.jpg`,
+        alt: "Tefal Sense electric kettle",
+      },
+    ],
   },
   {
     slug: "tea-kettle",
@@ -226,7 +263,12 @@ export const items: Item[] = [
         url: "https://www.ikea.com/hu/hu/p/riklig-teaskanna-ueveg-40297848/",
       },
     ],
-    photos: [{ src: "/images/tea-kettle-1.jpg", alt: "IKEA Riklig glass teapot" }],
+    photos: [
+      {
+        src: `${baseUrl}images/tea-kettle-1.jpg`,
+        alt: "IKEA Riklig glass teapot",
+      },
+    ],
   },
   {
     slug: "shoe-wardrobe",
@@ -246,8 +288,14 @@ export const items: Item[] = [
       },
     ],
     photos: [
-      { src: "/images/shoe-wardrobe-1.jpg", alt: "IKEA Bissa shoe cabinet" },
-      { src: "/images/shoe-wardrobe-2.jpg", alt: "IKEA Bissa shoe cabinet" },
+      {
+        src: `${baseUrl}images/shoe-wardrobe-1.jpg`,
+        alt: "IKEA Bissa shoe cabinet",
+      },
+      {
+        src: `${baseUrl}images/shoe-wardrobe-2.jpg`,
+        alt: "IKEA Bissa shoe cabinet",
+      },
     ],
   },
   {
@@ -263,10 +311,10 @@ export const items: Item[] = [
     },
     links: [],
     photos: [
-      { src: "/images/wardrobe-1.jpg", alt: "Wardrobe" },
-      { src: "/images/wardrobe-2.jpg", alt: "Wardrobe" },
-      { src: "/images/wardrobe-3.jpg", alt: "Wardrobe" },
-      { src: "/images/wardrobe-4.jpg", alt: "Wardrobe" },
+      { src: `${baseUrl}images/wardrobe-1.jpg`, alt: "Wardrobe" },
+      { src: `${baseUrl}images/wardrobe-2.jpg`, alt: "Wardrobe" },
+      { src: `${baseUrl}images/wardrobe-3.jpg`, alt: "Wardrobe" },
+      { src: `${baseUrl}images/wardrobe-4.jpg`, alt: "Wardrobe" },
     ],
   },
   {
@@ -288,10 +336,15 @@ export const items: Item[] = [
       {
         label: { en: "Budapest pipes map", ru: "Карта труб Будапешта" },
         url: "https://www.google.com/maps/d/viewer?mid=1UO6iUOCewhGYshx3QMKS-zv8xDVySR46&ll=47.49275230209709%2C19.125935499999976&z=11",
-        icon: "/icons/google-maps.png",
+        icon: `${baseUrl}icons/google-maps.png`,
       },
     ],
-    photos: [{ src: "/images/water-purifier-1.jpg", alt: "LifeStraw Home 10-Cup water purifier" }],
+    photos: [
+      {
+        src: `${baseUrl}images/water-purifier-1.jpg`,
+        alt: "LifeStraw Home 10-Cup water purifier",
+      },
+    ],
   },
   {
     slug: "smart-scales",
@@ -311,8 +364,14 @@ export const items: Item[] = [
       },
     ],
     photos: [
-      { src: "/images/scales-1.jpg", alt: "Xiaomi Body Composition Scale S400" },
-      { src: "/images/scales-2.jpg", alt: "Xiaomi Body Composition Scale S400" },
+      {
+        src: `${baseUrl}images/scales-1.jpg`,
+        alt: "Xiaomi Body Composition Scale S400",
+      },
+      {
+        src: `${baseUrl}images/scales-2.jpg`,
+        alt: "Xiaomi Body Composition Scale S400",
+      },
     ],
   },
   {
@@ -333,8 +392,14 @@ export const items: Item[] = [
       },
     ],
     photos: [
-      { src: "/images/vapor-iron-1.jpg", alt: "Tefal Access Steam Force iron" },
-      { src: "/images/vapor-iron-2.jpg", alt: "Tefal Access Steam Force iron" },
+      {
+        src: `${baseUrl}images/vapor-iron-1.jpg`,
+        alt: "Tefal Access Steam Force iron",
+      },
+      {
+        src: `${baseUrl}images/vapor-iron-2.jpg`,
+        alt: "Tefal Access Steam Force iron",
+      },
     ],
   },
 ];

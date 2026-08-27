@@ -5,6 +5,7 @@ import { sale } from "../data/sale";
 import { useTranslations } from "../i18n";
 import { useLang } from "../i18n/useLang";
 import { useTheme } from "../hooks/useTheme";
+import { baseUrl } from "../utils/baseUrl";
 
 type ViewMode = "list" | "grid";
 
@@ -32,7 +33,9 @@ export default function Home() {
 
       <main className="mx-auto max-w-3xl px-6 py-16">
         <div className="mb-12 rounded-2xl border border-line bg-line/15 px-6 py-8 sm:px-10 sm:py-10">
-          <p className="text-lg leading-relaxed text-ink/80">{sale.welcome[lang]}</p>
+          <p className="text-lg leading-relaxed text-ink/80">
+            {sale.welcome[lang]}
+          </p>
         </div>
 
         <section className="mb-12 border-y border-line py-8">
@@ -50,11 +53,13 @@ export default function Home() {
                   className="flex items-center gap-1.5 text-taupe transition hover:text-ink"
                 >
                   <img
-                    src="/icons/google-maps.png"
-                    alt=""
+                    src={`${baseUrl}icons/google-maps.png`}
+                    alt="google-maps-icon"
                     className="h-8 w-8 rounded-md"
                   />
-                  <span className="text-sm tracking-wide">{t.googleMapsLink}</span>
+                  <span className="text-sm tracking-wide">
+                    {t.googleMapsLink}
+                  </span>
                 </a>
                 <a
                   href={sale.maps.apple}
@@ -63,11 +68,13 @@ export default function Home() {
                   className="flex items-center gap-1.5 text-taupe transition hover:text-ink"
                 >
                   <img
-                    src="/icons/apple-maps.png"
-                    alt=""
+                    src={`${baseUrl}icons/apple-maps.png`}
+                    alt="apple-maps-icon"
                     className="h-8 w-8 rounded-md"
                   />
-                  <span className="text-sm tracking-wide">{t.appleMapsLink}</span>
+                  <span className="text-sm tracking-wide">
+                    {t.appleMapsLink}
+                  </span>
                 </a>
               </dd>
             </div>
@@ -85,7 +92,9 @@ export default function Home() {
         </div>
 
         <div className="mb-12 flex items-center justify-between">
-          <h1 className="text-base tracking-widest text-taupe uppercase">{t.browseHeading}</h1>
+          <h1 className="text-base tracking-widest text-taupe uppercase">
+            {t.browseHeading}
+          </h1>
           <div className="flex gap-3">
             <button
               type="button"
@@ -155,7 +164,7 @@ export default function Home() {
               return (
                 <a
                   key={item.slug}
-                  href={`/items/${item.slug}/`}
+                  href={`${baseUrl}items/${item.slug}`}
                   onMouseEnter={() => setHoveredSlug(item.slug)}
                   onMouseLeave={() => setHoveredSlug(null)}
                   className={`-mx-6 px-6 py-10 transition-colors ${isHovered ? "bg-line/20" : ""}`}
@@ -171,11 +180,19 @@ export default function Home() {
                   <div className="mt-5">
                     <h2 className="text-lg font-medium">{item.title[lang]}</h2>
                     <p className="mt-1 flex items-baseline gap-3">
-                      <span className="text-2xl font-semibold">{item.price}</span>
+                      <span className="text-2xl font-semibold">
+                        {item.price}
+                      </span>
                       {item.originalPrice && (
-                        <span className="text-taupe line-through">{item.originalPrice}</span>
+                        <span className="text-taupe line-through">
+                          {item.originalPrice}
+                        </span>
                       )}
-                      {item.priceNote && <span className="text-sm text-taupe">{item.priceNote}</span>}
+                      {item.priceNote && (
+                        <span className="text-sm text-taupe">
+                          {item.priceNote}
+                        </span>
+                      )}
                     </p>
                     <p
                       className={`mt-2 transition-colors ${isHovered ? "text-ink" : "text-ink/70"}`}
@@ -194,7 +211,7 @@ export default function Home() {
               return (
                 <a
                   key={item.slug}
-                  href={`/items/${item.slug}/`}
+                  href={`${baseUrl}items/${item.slug}`}
                   onMouseEnter={() => setHoveredSlug(item.slug)}
                   onMouseLeave={() => setHoveredSlug(null)}
                   className="relative aspect-square overflow-hidden bg-line/40"
@@ -205,22 +222,31 @@ export default function Home() {
                     className={`h-full w-full object-cover transition duration-500 ${isHovered ? "scale-105" : ""}`}
                     loading="lazy"
                   />
-                  {isHovered && <div
-                    className={`pointer-events-none absolute inset-0 flex flex-col items-center justify-center gap-1 bg-black/60 px-3 text-center transition-opacity duration-300 ${isHovered ? "opacity-100" : "opacity-0"}`}
-                  >
-                    <span className="text-2xl font-semibold text-white">{item.price}</span>
-                    <span className="text-sm font-medium text-white">
-                      {truncate(item.title[lang], 40)}
-                    </span>
-                  </div>}
+                  {isHovered && (
+                    <div
+                      className={`pointer-events-none absolute inset-0 flex flex-col items-center justify-center gap-1 bg-black/60 px-3 text-center transition-opacity duration-300 ${isHovered ? "opacity-100" : "opacity-0"}`}
+                    >
+                      <span className="text-2xl font-semibold text-white">
+                        {item.price}
+                      </span>
+                      <span className="text-sm font-medium text-white">
+                        {truncate(item.title[lang], 40)}
+                      </span>
+                    </div>
+                  )}
                 </a>
               );
             })}
           </div>
         )}
 
-        <section id="contact" className="mt-16 border-t border-line pt-12 text-center">
-          <h2 className="text-xs tracking-widest text-taupe uppercase">{t.contactHeading}</h2>
+        <section
+          id="contact"
+          className="mt-16 border-t border-line pt-12 text-center"
+        >
+          <h2 className="text-xs tracking-widest text-taupe uppercase">
+            {t.contactHeading}
+          </h2>
           <p className="mt-3 text-lg">{sale.contact.name[lang]}</p>
           <div className="mt-6 flex items-center justify-center gap-6">
             <a
