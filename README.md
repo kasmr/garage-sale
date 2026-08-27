@@ -1,3 +1,7 @@
+You can find deployed version to github pages here
+
+[https://kasmr.github.io/garage-sale](https://kasmr.github.io/garage-sale)
+
 # Astro Starter Kit: Minimal
 
 ```sh
