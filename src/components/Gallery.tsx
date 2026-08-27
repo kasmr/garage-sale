@@ -7,7 +7,9 @@ export default function Gallery({ photos }: { photos: Photo[] }) {
 
   const close = () => setActiveIndex(null);
   const showPrev = () =>
-    setActiveIndex((i) => (i === null ? null : (i - 1 + photos.length) % photos.length));
+    setActiveIndex((i) =>
+      i === null ? null : (i - 1 + photos.length) % photos.length,
+    );
   const showNext = () =>
     setActiveIndex((i) => (i === null ? null : (i + 1) % photos.length));
 
@@ -65,7 +67,7 @@ export default function Gallery({ photos }: { photos: Photo[] }) {
             type="button"
             onClick={close}
             aria-label="Close"
-            className="absolute right-4 top-4 text-3xl text-white/80 hover:text-white"
+            className="absolute right-4 top-4 text-3xl text-white/80 hover:text-white cursor-pointer"
           >
             &times;
           </button>
@@ -77,7 +79,7 @@ export default function Gallery({ photos }: { photos: Photo[] }) {
               showPrev();
             }}
             aria-label="Previous photo"
-            className="absolute left-2 text-4xl text-white/80 hover:text-white sm:left-6"
+            className="absolute left-2 text-4xl text-white/80 hover:text-white sm:left-6 cursor-pointer"
           >
             &#8249;
           </button>
@@ -96,7 +98,7 @@ export default function Gallery({ photos }: { photos: Photo[] }) {
               showNext();
             }}
             aria-label="Next photo"
-            className="absolute right-2 text-4xl text-white/80 hover:text-white sm:right-6"
+            className="absolute right-2 text-4xl text-white/80 hover:text-white sm:right-6 cursor-pointer"
           >
             &#8250;
           </button>

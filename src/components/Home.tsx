@@ -6,6 +6,7 @@ import { useTranslations } from "../i18n";
 import { useLang } from "../i18n/useLang";
 import { useTheme } from "../hooks/useTheme";
 import { baseUrl } from "../utils/baseUrl";
+import { useDocumentMeta } from "../hooks/uesDocumentMeta";
 
 type ViewMode = "list" | "grid";
 
@@ -20,6 +21,7 @@ export default function Home() {
   const [view, setView] = useState<ViewMode>("list");
   const [hoveredSlug, setHoveredSlug] = useState<string | null>(null);
   const t = useTranslations(lang);
+  useDocumentMeta(t.siteTitle, `${t.browseHeading} - ${sale.address[lang]}`);
 
   return (
     <>

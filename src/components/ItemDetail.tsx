@@ -6,11 +6,16 @@ import { useTranslations } from "../i18n";
 import { useLang } from "../i18n/useLang";
 import { useTheme } from "../hooks/useTheme";
 import { baseUrl } from "../utils/baseUrl";
+import { useDocumentMeta } from "../hooks/uesDocumentMeta";
 
 export default function ItemDetail({ item }: { item: Item }) {
   const [lang, setLang] = useLang();
   const [theme, setTheme] = useTheme();
   const t = useTranslations(lang);
+  useDocumentMeta(
+    `${item.title[lang]} - ${item.price}`,
+    item.description[lang],
+  );
 
   return (
     <>
