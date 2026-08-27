@@ -7,6 +7,7 @@ import tailwindcss from "@tailwindcss/vite";
 // https://astro.build/config
 export default defineConfig({
   site: "https://kasmr.github.io",
+  base: "/garage-sale",
   integrations: [react()],
 
   vite: {
