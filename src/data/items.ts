@@ -302,7 +302,7 @@ export const items: Item[] = [
     slug: "cabinet",
     price: "25€",
     title: {
-      en: "Сф",
+      en: "2-drawer cabinet",
       ru: "Тумбочка",
     },
     description: {
