@@ -36,11 +36,11 @@ export const items: Item[] = [
     ],
     photos: [
       {
-        src: `${baseUrl}images/monitor-1.jpg`,
+        src: `${baseUrl}/images/monitor-1.jpg`,
         alt: "LG UltraWide Monitor 29WP500-B",
       },
       {
-        src: `${baseUrl}images/monitor-2.jpg`,
+        src: `${baseUrl}/images/monitor-2.jpg`,
         alt: "LG UltraWide Monitor 29WP500-B",
       },
     ],
@@ -64,9 +64,9 @@ export const items: Item[] = [
       },
     ],
     photos: [
-      { src: `${baseUrl}images/soundbar-1.jpg`, alt: "LG Soundbar S60T" },
-      { src: `${baseUrl}images/soundbar-2.jpg`, alt: "LG Soundbar S60T" },
-      { src: `${baseUrl}images/soundbar-3.jpg`, alt: "LG Soundbar S60T" },
+      { src: `${baseUrl}/images/soundbar-1.jpg`, alt: "LG Soundbar S60T" },
+      { src: `${baseUrl}/images/soundbar-2.jpg`, alt: "LG Soundbar S60T" },
+      { src: `${baseUrl}/images/soundbar-3.jpg`, alt: "LG Soundbar S60T" },
     ],
   },
   {
@@ -89,15 +89,15 @@ export const items: Item[] = [
     ],
     photos: [
       {
-        src: `${baseUrl}images/air-purifier-1.jpg`,
+        src: `${baseUrl}/images/air-purifier-1.jpg`,
         alt: "Pro Breeze 5L Portable Air Cooler",
       },
       {
-        src: `${baseUrl}images/air-purifier-2.jpg`,
+        src: `${baseUrl}/images/air-purifier-2.jpg`,
         alt: "Pro Breeze 5L Portable Air Cooler",
       },
       {
-        src: `${baseUrl}images/air-purifier-3.jpg`,
+        src: `${baseUrl}/images/air-purifier-3.jpg`,
         alt: "Pro Breeze 5L Portable Air Cooler",
       },
     ],
@@ -121,7 +121,7 @@ export const items: Item[] = [
     ],
     photos: [
       {
-        src: `${baseUrl}images/chair-1.jpg`,
+        src: `${baseUrl}/images/chair-1.jpg`,
         alt: "IKEA Renberget Office Chair",
       },
     ],
@@ -144,8 +144,8 @@ export const items: Item[] = [
       },
     ],
     photos: [
-      { src: `${baseUrl}images/table-1.jpg`, alt: "IKEA Alex Desk" },
-      { src: `${baseUrl}images/table-2.jpg`, alt: "IKEA Alex Desk" },
+      { src: `${baseUrl}/images/table-1.jpg`, alt: "IKEA Alex Desk" },
+      { src: `${baseUrl}/images/table-2.jpg`, alt: "IKEA Alex Desk" },
     ],
   },
   {
@@ -167,11 +167,11 @@ export const items: Item[] = [
     ],
     photos: [
       {
-        src: `${baseUrl}images/vaacum-cleaner-1.jpg`,
+        src: `${baseUrl}/images/vaacum-cleaner-1.jpg`,
         alt: "Xiaomi Robot Vacuum S10",
       },
       {
-        src: `${baseUrl}images/vaacum-cleaner-2.jpg`,
+        src: `${baseUrl}/images/vaacum-cleaner-2.jpg`,
         alt: "Xiaomi Robot Vacuum S10",
       },
     ],
@@ -195,7 +195,7 @@ export const items: Item[] = [
     ],
     photos: [
       {
-        src: `${baseUrl}images/tennis-rackets-1.jpg`,
+        src: `${baseUrl}/images/tennis-rackets-1.jpg`,
         alt: "Table tennis racket set",
       },
     ],
@@ -218,8 +218,8 @@ export const items: Item[] = [
       },
     ],
     photos: [
-      { src: `${baseUrl}images/matress-1.jpg`, alt: "Camping air mattress" },
-      { src: `${baseUrl}images/matress-2.jpg`, alt: "Camping air mattress" },
+      { src: `${baseUrl}/images/matress-1.jpg`, alt: "Camping air mattress" },
+      { src: `${baseUrl}/images/matress-2.jpg`, alt: "Camping air mattress" },
     ],
   },
   {
@@ -241,7 +241,7 @@ export const items: Item[] = [
     ],
     photos: [
       {
-        src: `${baseUrl}images/kettle-1.jpg`,
+        src: `${baseUrl}/images/kettle-1.jpg`,
         alt: "Tefal Sense electric kettle",
       },
     ],
@@ -265,7 +265,7 @@ export const items: Item[] = [
     ],
     photos: [
       {
-        src: `${baseUrl}images/tea-kettle-1.jpg`,
+        src: `${baseUrl}/images/tea-kettle-1.jpg`,
         alt: "IKEA Riklig glass teapot",
       },
     ],
@@ -289,11 +289,11 @@ export const items: Item[] = [
     ],
     photos: [
       {
-        src: `${baseUrl}images/shoe-wardrobe-1.jpg`,
+        src: `${baseUrl}/images/shoe-wardrobe-1.jpg`,
         alt: "IKEA Bissa shoe cabinet",
       },
       {
-        src: `${baseUrl}images/shoe-wardrobe-2.jpg`,
+        src: `${baseUrl}/images/shoe-wardrobe-2.jpg`,
         alt: "IKEA Bissa shoe cabinet",
       },
     ],
@@ -311,10 +311,10 @@ export const items: Item[] = [
     },
     links: [],
     photos: [
-      { src: `${baseUrl}images/wardrobe-1.jpg`, alt: "Wardrobe" },
-      { src: `${baseUrl}images/wardrobe-2.jpg`, alt: "Wardrobe" },
-      { src: `${baseUrl}images/wardrobe-3.jpg`, alt: "Wardrobe" },
-      { src: `${baseUrl}images/wardrobe-4.jpg`, alt: "Wardrobe" },
+      { src: `${baseUrl}/images/wardrobe-1.jpg`, alt: "Wardrobe" },
+      { src: `${baseUrl}/images/wardrobe-2.jpg`, alt: "Wardrobe" },
+      { src: `${baseUrl}/images/wardrobe-3.jpg`, alt: "Wardrobe" },
+      { src: `${baseUrl}/images/wardrobe-4.jpg`, alt: "Wardrobe" },
     ],
   },
   {
@@ -336,12 +336,12 @@ export const items: Item[] = [
       {
         label: { en: "Budapest pipes map", ru: "Карта труб Будапешта" },
         url: "https://www.google.com/maps/d/viewer?mid=1UO6iUOCewhGYshx3QMKS-zv8xDVySR46&ll=47.49275230209709%2C19.125935499999976&z=11",
-        icon: `${baseUrl}icons/google-maps.png`,
+        icon: `${baseUrl}/icons/google-maps.png`,
       },
     ],
     photos: [
       {
-        src: `${baseUrl}images/water-purifier-1.jpg`,
+        src: `${baseUrl}/images/water-purifier-1.jpg`,
         alt: "LifeStraw Home 10-Cup water purifier",
       },
     ],
@@ -365,11 +365,11 @@ export const items: Item[] = [
     ],
     photos: [
       {
-        src: `${baseUrl}images/scales-1.jpg`,
+        src: `${baseUrl}/images/scales-1.jpg`,
         alt: "Xiaomi Body Composition Scale S400",
       },
       {
-        src: `${baseUrl}images/scales-2.jpg`,
+        src: `${baseUrl}/images/scales-2.jpg`,
         alt: "Xiaomi Body Composition Scale S400",
       },
     ],
@@ -393,11 +393,11 @@ export const items: Item[] = [
     ],
     photos: [
       {
-        src: `${baseUrl}images/vapor-iron-1.jpg`,
+        src: `${baseUrl}/images/vapor-iron-1.jpg`,
         alt: "Tefal Access Steam Force iron",
       },
       {
-        src: `${baseUrl}images/vapor-iron-2.jpg`,
+        src: `${baseUrl}/images/vapor-iron-2.jpg`,
         alt: "Tefal Access Steam Force iron",
       },
     ],

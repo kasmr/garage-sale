@@ -53,7 +53,7 @@ export default function Home() {
                   className="flex items-center gap-1.5 text-taupe transition hover:text-ink"
                 >
                   <img
-                    src={`${baseUrl}icons/google-maps.png`}
+                    src={`${baseUrl}/icons/google-maps.png`}
                     alt="google-maps-icon"
                     className="h-8 w-8 rounded-md"
                   />
@@ -68,7 +68,7 @@ export default function Home() {
                   className="flex items-center gap-1.5 text-taupe transition hover:text-ink"
                 >
                   <img
-                    src={`${baseUrl}icons/apple-maps.png`}
+                    src={`${baseUrl}/icons/apple-maps.png`}
                     alt="apple-maps-icon"
                     className="h-8 w-8 rounded-md"
                   />
@@ -164,7 +164,7 @@ export default function Home() {
               return (
                 <a
                   key={item.slug}
-                  href={`${baseUrl}items/${item.slug}`}
+                  href={`${baseUrl}/items/${item.slug}`}
                   onMouseEnter={() => setHoveredSlug(item.slug)}
                   onMouseLeave={() => setHoveredSlug(null)}
                   className={`-mx-6 px-6 py-10 transition-colors ${isHovered ? "bg-line/20" : ""}`}
@@ -211,7 +211,7 @@ export default function Home() {
               return (
                 <a
                   key={item.slug}
-                  href={`${baseUrl}items/${item.slug}`}
+                  href={`${baseUrl}/items/${item.slug}`}
                   onMouseEnter={() => setHoveredSlug(item.slug)}
                   onMouseLeave={() => setHoveredSlug(null)}
                   className="relative aspect-square overflow-hidden bg-line/40"
