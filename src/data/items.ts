@@ -65,7 +65,39 @@ export const items: Item[] = [
     ],
   },
   {
-    slug: "ping-pong-rackets",
+    slug: "tennis-racket",
+    price: "70€",
+    title: {
+      en: "Tennis Racket Head Radical Pro Graphene 360 2022",
+      ru: "Теннисная ракетка Head Radical Pro Graphene 360 2022",
+    },
+    description: {
+      en: "Tennis Racket Head Radical Pro Graphene 360 2022, 310g, 98cm",
+      ru: "Теннисная ракетка Head Radical Pro Graphene 360 2022, 310g, 98cm",
+    },
+    links: [
+      {
+        label: { en: "Product link", ru: "Ссылка на товар" },
+        url: "https://teniszuto.arukereso.hu/head/graphene-360-radical-pro-2-p1032706936",
+      },
+      {
+        label: { en: "Review link", ru: "Ссылка на обзор" },
+        url: "https://www.tennis-warehouse.com/learning_center/racquet_reviews/HG3RPreview.html?srsltid=AfmBOop3oaWuWD-0xUu-eb5FAM7I1ebtRSk4u4a4OxsKVWIhfyUUT7Of",
+      },
+    ],
+    photos: [
+      {
+        src: `${baseUrl}/images/tennis-racket-1.jpg`,
+        alt: "Tennis racket",
+      },
+      {
+        src: `${baseUrl}/images/tennis-racket-2.jpg`,
+        alt: "Tennis racket",
+      },
+    ],
+  },
+  {
+    slug: "ping-pong-racket",
     price: "10€",
     title: {
       en: "Table Tennis Racket Set (2 rackets + balls)",
