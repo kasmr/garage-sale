@@ -13,39 +13,6 @@ export type Item = {
 
 export const items: Item[] = [
   {
-    slug: "monitor",
-    price: "150€",
-    originalPrice: "250€",
-    title: {
-      en: "LG UltraWide Monitor 29WP500-B",
-      ru: "Монитор LG UltraWide 29WP500-B",
-    },
-    description: {
-      en: "29-inch UltraWide LG monitor, model 29WP500-B. Bought new for 250€, selling for 150€.",
-      ru: "29-дюймовый монитор LG UltraWide, модель 29WP500-B. Покупал за 250€, продаю за 150€.",
-    },
-    links: [
-      {
-        label: { en: "Compare price", ru: "Сравнить цену" },
-        url: "https://www.arukereso.hu/monitor-c3126/lg/ultrawide-29wp500-b-p652180485/",
-      },
-      {
-        label: { en: "Product link", ru: "Ссылка на товар" },
-        url: "https://www.lg.com/hu/monitorok/ultrawide-monitor/29wp500-b/",
-      },
-    ],
-    photos: [
-      {
-        src: `${baseUrl}/images/monitor-1.jpg`,
-        alt: "LG UltraWide Monitor 29WP500-B",
-      },
-      {
-        src: `${baseUrl}/images/monitor-2.jpg`,
-        alt: "LG UltraWide Monitor 29WP500-B",
-      },
-    ],
-  },
-  {
     slug: "soundbar",
     price: "110€",
     originalPrice: "170€",
@@ -67,85 +34,6 @@ export const items: Item[] = [
       { src: `${baseUrl}/images/soundbar-1.jpg`, alt: "LG Soundbar S60T" },
       { src: `${baseUrl}/images/soundbar-2.jpg`, alt: "LG Soundbar S60T" },
       { src: `${baseUrl}/images/soundbar-3.jpg`, alt: "LG Soundbar S60T" },
-    ],
-  },
-  {
-    slug: "air-purifier",
-    price: "100€",
-    originalPrice: "179€",
-    title: {
-      en: "Pro Breeze 5L Portable Air Cooler",
-      ru: "Портативный воздухоохладитель Pro Breeze 5L",
-    },
-    description: {
-      en: "Pro Breeze 5L portable air cooler with 4 operating modes. Bought for 179€, selling for 100€.",
-      ru: "Портативный воздухоохладитель Pro Breeze объёмом 5 л, 4 режима работы. Покупал за 179€, отдаю за 100€.",
-    },
-    links: [
-      {
-        label: { en: "Product link", ru: "Ссылка на товар" },
-        url: "https://eu.probreeze.com/products/5l-portable-air-cooler-with-4-operating-modes",
-      },
-    ],
-    photos: [
-      {
-        src: `${baseUrl}/images/air-purifier-1.jpg`,
-        alt: "Pro Breeze 5L Portable Air Cooler",
-      },
-      {
-        src: `${baseUrl}/images/air-purifier-2.jpg`,
-        alt: "Pro Breeze 5L Portable Air Cooler",
-      },
-      {
-        src: `${baseUrl}/images/air-purifier-3.jpg`,
-        alt: "Pro Breeze 5L Portable Air Cooler",
-      },
-    ],
-  },
-  {
-    slug: "computer-chair",
-    price: "25€",
-    title: {
-      en: "IKEA Renberget Office Chair",
-      ru: "Компьютерное кресло IKEA Renberget",
-    },
-    description: {
-      en: "IKEA Renberget swivel office chair in black (Bomstad).",
-      ru: "Компьютерное кресло IKEA Renberget, чёрное (Bomstad).",
-    },
-    links: [
-      {
-        label: { en: "Product link", ru: "Ссылка на товар" },
-        url: "https://www.ikea.com/hu/hu/p/renberget-forgoszek-bomstad-fekete-60493546/",
-      },
-    ],
-    photos: [
-      {
-        src: `${baseUrl}/images/chair-1.jpg`,
-        alt: "IKEA Renberget Office Chair",
-      },
-    ],
-  },
-  {
-    slug: "computer-table",
-    price: "100€",
-    title: {
-      en: "IKEA Alex Desk",
-      ru: "Стол IKEA Alex",
-    },
-    description: {
-      en: "IKEA Alex desk in turquoise 132x58 cm.",
-      ru: "Письменный стол IKEA Alex 132x58 cm, бирюзового цвета. Не обращайте внимание на собранный пазл сверху стола, 1000 кусочков сикстинская капелла",
-    },
-    links: [
-      {
-        label: { en: "Product link", ru: "Ссылка на товар" },
-        url: "https://www.ikea.com/hu/hu/p/alex-iroasztal-soetetszuerke-80588888/",
-      },
-    ],
-    photos: [
-      { src: `${baseUrl}/images/table-1.jpg`, alt: "IKEA Alex Desk" },
-      { src: `${baseUrl}/images/table-2.jpg`, alt: "IKEA Alex Desk" },
     ],
   },
   {
@@ -220,30 +108,6 @@ export const items: Item[] = [
     photos: [
       { src: `${baseUrl}/images/matress-1.jpg`, alt: "Camping air mattress" },
       { src: `${baseUrl}/images/matress-2.jpg`, alt: "Camping air mattress" },
-    ],
-  },
-  {
-    slug: "electric-kettle",
-    price: "30€",
-    title: {
-      en: "Tefal Sense Electric Kettle",
-      ru: "Электрочайник Tefal Sense",
-    },
-    description: {
-      en: "Tefal Sense KO693110 electric kettle, white, 1.5L.",
-      ru: "Электрочайник Tefal Sense KO693110, белый, 1,5 л.",
-    },
-    links: [
-      {
-        label: { en: "Product link", ru: "Ссылка на товар" },
-        url: "https://www.tefal.hu/vizforralo-tefal-sense-ko693110-feher-1-5-l",
-      },
-    ],
-    photos: [
-      {
-        src: `${baseUrl}/images/kettle-1.jpg`,
-        alt: "Tefal Sense electric kettle",
-      },
     ],
   },
   {
